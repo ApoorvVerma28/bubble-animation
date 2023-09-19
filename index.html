@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+      }
+      .hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url(background.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .logo {
+        width: 60px;
+        cursor: pointer;
+        color: black;
+      }
+      .nav {
+        width: 85%;
+        height: 15%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      button {
+        background-color: transparent;
+        color: #f7f7f7;
+        padding: 10px 25px;
+        border: 3px solid #181414;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+      }
+      .content {
+        color: #fbfcfd;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+      }
+      h1 {
+        font-size: 80px;
+        margin: 10px 0px 30px;
+        line-height: 80px;
+      }
+      .sidebar {
+        height: 100vh;
+        width: 50px;
+        background: linear-gradient(#00545d, #000729);
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .menu {
+        width: 38px;
+        margin: 40px 5px 0;
+        cursor: pointer;
+        background-color: transparent transparent;
+        opacity: 0.4;
+      }
+      .social-link {
+        width: 5px;
+        height: 3px;
+        margin: 60px auto;
+        cursor: pointer;
+      }
+      p {
+        font-size: large;
+      }
+      .bubble img {
+        width: 48px;
+        animation-name: bubble;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear infinite;
+        
+      }
+      .bubble {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        bottom: -50px;
+        justify-content: space-around;
+        position: absolute;
+      }
+      @keyframes bubble {
+        0% {
+          transform: translateY(0);
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 0.89;
+        }
+
+        70% {
+          opacity: 0.99;
+        }
+
+        100% {
+          transform: translateY(-88vh);
+
+          opacity: 0.1;
+        }
+      }
+      .bubble img:nth-child(1){
+        animation-delay:2.1s;
+      width: 28px;}
+      .bubble img:nth-child(2){
+        animation-delay:5.5s;
+         width: 35px;
+      }
+      .bubble img:nth-child(3){
+        animation-delay:1s;
+        width: 15px;}
+      .bubble img:nth-child(4){
+        animation-delay:6.3s;
+        width: 45px;}
+      .bubble img:nth-child(5){
+        animation-delay:4.5s;
+        width: 30.7px;}
+      .bubble img:nth-child(6){
+        animation-delay:0s;
+        width: 42px;}
+      .bubble img:nth-child(7){
+        animation-delay:3s;
+        width: 47px;}
+      .bubble img:nth-child(8){
+        animation-delay:6.9s;
+        width: 20px;}
+      
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="nav">
+        <img src="logo.png" alt="logo" class="logo" />
+        <button type="button">Contact</button>
+      </div>
+      <div class="content">
+        <p>Hey,<br />This is <b>Apoorv Verma</b></p>
+        <h1>
+          Web <br />
+          Developer
+        </h1>
+        <p>HTML,CSS and Javascript</p>
+        <button type="button">About Me</button>
+      </div>
+      <div class="sidebar">
+        <img src="menu.png" alt="" class="menu" />
+        <div class="soical-link">
+          <a href="https://www.instagram.com/apoorv_verma_9988/"
+            ><img src="ig.png" alt=""
+          /></a>
+          <a href="https://github.com/ApoorvVerma28"
+            ><img src="gh.png" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/apoorv-verma-165758250/"
+            ><img src="ln.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="bubble">
+        <img src="bubble.png" alt="" />
+        <img src="bubble.png" alt="" />
+        <img src="bubble.png" alt="" />
+        <img src="bubble.png" alt="" />
+        <img src="bubble.png" alt="" />
+        <img src="bubble.png" alt="" />
+        <img src="bubble.png" alt="" />
+        <img src="bubble.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
